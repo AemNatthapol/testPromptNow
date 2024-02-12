@@ -1,7 +1,7 @@
  <?php 
-
-	for ($i=0; $i <= 4; $i++) { 
-		for ($j=4; $j >= 0; $j--) { 
+ 	$round = '10';
+	for ($i=0; $i <= $round; $i++) { 
+		for ($j=$round; $j >= 0; $j--) { 
 			if ($i<$j) {
 				echo "0";
 			}else{
@@ -15,7 +15,7 @@
 				echo "X";
 			}
 		}
-		for ($l=4; $l > 0 ; $l--) { 
+		for ($l=$round; $l > $i ; $l--) { 
 			echo "0";
 		}
 		echo "<br>";
